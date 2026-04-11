@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jephte | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: #e2e8f0;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: #38bdf8;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .profile-container {
+            margin-top: 20px;
+        }
+
+        .profile-container img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+            transition: 0.3s;
+        }
+
+        .profile-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.6);
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #e2e8f0;
+            text-decoration: none;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: #38bdf8;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        .skills {
+            text-align: center;
+        }
+
+        .skills li {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.15);
+            padding: 10px 15px;
+            margin: 8px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .skills li:hover {
+            background: #38bdf8;
+            color: #020617;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+        }
+
+        
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input,
+        form textarea {
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        form input::placeholder,
+        form textarea::placeholder {
+            color: #94a3b8;
+        }
+
+        button {
+            padding: 12px;
+            background: #38bdf8;
+            color: #020617;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+            box-shadow: 0 0 10px #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: rgba(15, 23, 42, 0.6);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #94a3b8;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Jephte</h1>
+        <p>Aspiring Web Developer</p>
+
+        <div class="profile-container">
+            <img src="photo212.jpg" alt="Jephte Profile Photo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+            I am an Information Technology student passionate about building modern,
+            futuristic web applications. I enjoy designing clean interfaces and
+            creating efficient systems.
+        </p>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Web Development</li>
+        </ul>
+    </section>
+
+    
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+
+        <a href="https://jephtefinalposter.netlify.app/" target="_blank" class="project-link">
+            <div class="card">
+                <h3>Poster Making</h3>
+                <p>A modern and amazing Poster Making made using HTML & CSS.</p>
+            </div>
+        </a>
+
+        <a href="https://fanciful-lollipop-c0b91c.netlify.app/" target="_blank" class="project-link">
+            <div class="card">
+                <h3>Class Schedule Page</h3>
+                <p>A responsive class schedule page built with HTML and CSS.</p>
+            </div>
+        </a>
+
+        <a href="https://multimedia-website-project.netlify.app/" target="_blank" class="project-link">
+            <div class="card">
+                <h3>Mini Website</h3>
+                <p>A simple yet effective mini website built with HTML and CSS.</p>
+            </div>
+        </a>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Sumagang | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
